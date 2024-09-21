@@ -7,6 +7,6 @@ const userSchema = new mongoose.Schema({
     image:String
 },{timestamps:true})
 
-const userdb = new mongoose.nodel("users",userSchema);
+const userdb = new mongoose.model("users",userSchema);
 
 module.exports= userdb;

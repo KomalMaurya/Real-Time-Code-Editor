@@ -2,6 +2,12 @@ import React from 'react';
 import './login.css';
 
 function Login() {
+  const loginwithgoogle =()=>{
+    window.open("http://localhost:8080/auth/google/callback","_self")
+  }
+  const loginwithgithub =()=>{
+    window.open("http://localhost:8080/auth/github/callback","_self")
+  }
   return (
     <>
     <div className='login-page'>
@@ -13,8 +19,11 @@ function Login() {
             <button>Login</button>
             <p className='message'>Not Registered? <a href='#_'>Create an account </a></p>
           </form>
-          <button className='login-with-google-btn'>
+          <button className='login-with-google-btn' onClick={loginwithgoogle}>
             Sign with Google
+          </button>
+          <button className='login-with-google-btn' onClick={loginwithgithub}>
+            Sign with Github
           </button>
         </div>
 
