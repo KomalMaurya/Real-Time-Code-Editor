@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Real-Time-Code-Editor/static/css/main.8aa3a1e9.css",
+    "main.js": "/Real-Time-Code-Editor/static/js/main.38a1b585.js",
+    "static/js/453.8ab44547.chunk.js": "/Real-Time-Code-Editor/static/js/453.8ab44547.chunk.js",
+    "static/media/arrow.png": "/Real-Time-Code-Editor/static/media/arrow.d583cdf9add2a79dd1e4.png",
+    "static/media/Nohemi-Light-BF6438cc5899919.ttf": "/Real-Time-Code-Editor/static/media/Nohemi-Light-BF6438cc5899919.67dd1d19392632d73d88.ttf",
+    "static/media/email.png": "/Real-Time-Code-Editor/static/media/email.53ec0ef897e93eae2e03.png",
+    "index.html": "/Real-Time-Code-Editor/index.html",
+    "main.8aa3a1e9.css.map": "/Real-Time-Code-Editor/static/css/main.8aa3a1e9.css.map",
+    "main.38a1b585.js.map": "/Real-Time-Code-Editor/static/js/main.38a1b585.js.map",
+    "453.8ab44547.chunk.js.map": "/Real-Time-Code-Editor/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aa3a1e9.css",
+    "static/js/main.38a1b585.js"
+  ]
+}
