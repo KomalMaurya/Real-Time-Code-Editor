@@ -6,6 +6,13 @@ import Home from './pages/Home';
 import EditorPage from './pages/EditorPage';
 
 function App() {
+  axios.default.withCredentials=true;
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    axios.post("https://real-time-code-editor-gamma.vercel.app/",{name,email,passwprd}
+               .then(result =>console.log(result))
+               .catch(err=>console.log(err))
+  }
   return (
     <div>
       <Routes>
