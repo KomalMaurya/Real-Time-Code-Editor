@@ -6,20 +6,18 @@
     box-sizing: border-box;
 }
 
-body{
-    background: rgb(151, 222, 243);
-}
-
 .container{
     display: grid;
     place-items: center;
     overflow: hidden;
+    background: rgb(151, 222, 243);
+    height: 100vh;
 }
 
 .main{
     display: flex;
     width: 80%;
-    margin-top: 5%;
+    margin-top: 1%;
     background: white;
     border-radius: 1.5rem;
     overflow: hidden;
