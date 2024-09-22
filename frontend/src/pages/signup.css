@@ -52,6 +52,64 @@
     width: 100%;
 }
 
+.box1-content form{
+    /* border: 2px solid saddlebrown; */
+    width: 70%;
+    display: grid;
+    gap: 1rem;
+}
+
+.inputBox{
+    display: flex;
+    justify-content:center ;
+    border-bottom: 0.1px solid rgb(182, 182, 182);
+    gap: 0.5rem;
+}
+
+.inputOutline,.inputOutline:focus{
+    outline: none;
+    border: none;
+    width: 80%;
+}
+
+.SignBtn{
+    width: 50%;
+    height: 6vh;
+    border-radius: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(79, 127, 231);
+    border: none;
+    color: white;
+    transition: transform .6s ease-in-out;
+}
+
+.SignBtn:active{
+    transform: scale(0.96);
+}
+
+.circleBtn{
+    background:rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.SignBtn h3{
+    width: 40%;
+    margin-left: 10%;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align:right;
+}
+
 .member h3{
     font-size: 0.9rem;
     font-weight: 500;
@@ -96,11 +154,17 @@ form label input{
 
 .circle{
     border: 1px solid grey;
+    background: transparent;
+    cursor: pointer;
     width: 2rem;
     height: 2rem;
     display: grid;
     place-items: center;
     border-radius: 50%;
+}
+
+.circle:active{
+    transform: scale(0.96);
 }
 
 .arrow{

@@ -99,9 +99,11 @@ app.get("/auth/google/callback",passport.authenticate("google",{
 passport.use(new GitHubStrategy({
     clientID: GITHUB_CLIENT_ID,
     clientSecret: GITHUB_CLIENT_SECRET,
-    callbackURL: "http://localhost:8080/auth/github/callback"
+    callbackURL: "http://localhost:8080/auth/github/callback",
+    scope:["profile","email"]
   },
   async(accessToken, refreshToken, profile, cb) =>{
+    console.log("profile",profile)
     const user =await userdb.findOne({
         accountId:profile.id,
         provider:"github",

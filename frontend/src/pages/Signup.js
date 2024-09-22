@@ -1,9 +1,19 @@
+// Modules Imported :
 import React from 'react'
 import { Link } from 'react-router-dom';
+import './signup.css';
+
+// Font Awesome Icons Imported :
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons';
-import './signup.css';
+import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons';
+
+
+// Images Imported :
 import arrow from '../assets/arrow.png';
+import user from '../assets/user.png';
+import email from '../assets/email.png';
+import password from '../assets/password_key.jpg';
 
 function Signup() {
   return (
@@ -12,9 +22,11 @@ function Signup() {
         <div className='box1'>
           <div className='box1-content'>
             <div className='member'>
-              <div className='circle'>
+              <Link to="/login">
+              <button className='circle'>
                 <FontAwesomeIcon icon={faArrowLeftLong} className='arrow'/>
-              </div>
+              </button>
+              </Link>
               <h3>Already member? &nbsp;<Link to="/login" className='Sign'>Sign in</Link></h3>
             </div>
             <div className='heading'>
@@ -25,10 +37,24 @@ function Signup() {
                 <img src={arrow} alt="Logo" />
             </div>
             <form>
-              <div>
-                <label htmlFor='name'>Name</label>
-                <input type='text'/>
+              <div className='inputBox'>
+                <label htmlFor='name'><img src={user} alt='User'/></label>
+                <input type='text' className='inputOutline'/>
               </div>
+              <div className='inputBox'>
+                <label htmlFor='email'><img src={email} alt='User'/></label>
+                <input type='text' className='inputOutline'/>
+              </div>
+              <div className='inputBox'>
+                <label htmlFor='password'><img src={password} alt='User'/></label>
+                <input type='text' className='inputOutline'/>
+              </div>
+              <button type='button' className='SignBtn'>
+                <h3>Sign Up</h3>
+                <div className='circleBtn'>
+                  <FontAwesomeIcon icon={faArrowRightLong} className='arrow'/>
+                </div>
+              </button>
             </form>
           </div>
         </div>
